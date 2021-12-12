@@ -1,0 +1,72 @@
+body {
+  background-color: #2D3142;
+}
+.App {
+  margin-top: 5px;
+  text-align: center;
+  color: #ECC8AF;
+}
+
+.App-dateLine {
+  font-size: 24px;
+}
+.App-date {
+  margin-bottom: 2px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #D33F49;
+}
+
+.DayOfWeek {
+  margin: 30px 0px
+}
+
+.DayOfWeek-text {
+  font-size: 20px;
+  border: 1px solid #E8D5B7;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.DayOfWeek--selected .DayOfWeek-text {
+  color: #2D3142;
+  background-color: #ECC8AF;
+  border-color: #ECC8AF;
+}
+
+.DayOfWeek--highlighted .DayOfWeek-text {
+  color: #ECC8AF;
+  background-color: #D33F49;
+  border-color: #D33F49;
+}
+
+.NextStep {
+  font-size: 20px;
+  display: inline-block;
+  color: #2D3142;
+  border: 1px solid #87BAAB;
+  background-color: #87BAAB;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Result {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Result-result {
+  font-size: 36px;
+}
+
+.Result--correct {
+  color: #87BAAB
+}
+
+.Result--incorrect {
+  color: #D33F49;
+}
