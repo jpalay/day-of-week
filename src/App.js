@@ -61,6 +61,7 @@ function App() {
             isCorrect={date.getDay() === selectedDay}
             correctAnswers={correctAnswers}
             totalAttempts={totalAttempts}
+            year={date.getFullYear()}
           />
           : null
       }
@@ -89,6 +90,20 @@ function App() {
   );
 }
 
+function calculateDoomsday(year) {
+  const centuryCodeCycle = [5, 3, 2, 0]
+  let centuryIndex = Math.floor(year / 100) - 18
+  while (centuryIndex < 0) {
+    centuryIndex += 4;
+  }
+  const centuryCode = centuryCodeCycle[centuryIndex % centuryCodeCycle.length];
+
+  const yearsIntoCentury = year % 100;
+  const numLeapYears = Math.floor(yearsIntoCentury / 4);
+
+  return (centuryCode + yearsIntoCentury + numLeapYears) % 7;
+}
+
 function Result(props) {
   const correctPhrases = ["Correct!", "Exactly!", "Right on!", "You got it!", "That's right!"]
   const correctPhrase = correctPhrases[Math.floor(Math.random()*correctPhrases.length)];
@@ -105,7 +120,7 @@ function Result(props) {
       { props.isCorrect ? correctPhrase : "incorrect - try again!" }
     </div>
     <div className="Result-record">
-      ({props.correctAnswers}/{props.totalAttempts})
+      ({props.correctAnswers}/{props.totalAttempts}) - pi day fell on a {getDayOfWeek(calculateDoomsday(props.year))}
     </div>
   </div>
 }
