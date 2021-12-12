@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/day-of-week/static/css/main.d5819cba.chunk.css",
+    "main.js": "/day-of-week/static/js/main.2b3369c5.chunk.js",
+    "main.js.map": "/day-of-week/static/js/main.2b3369c5.chunk.js.map",
+    "runtime-main.js": "/day-of-week/static/js/runtime-main.4bdfcab0.js",
+    "runtime-main.js.map": "/day-of-week/static/js/runtime-main.4bdfcab0.js.map",
+    "static/js/2.b06c10b1.chunk.js": "/day-of-week/static/js/2.b06c10b1.chunk.js",
+    "static/js/2.b06c10b1.chunk.js.map": "/day-of-week/static/js/2.b06c10b1.chunk.js.map",
+    "static/js/3.d455eb6a.chunk.js": "/day-of-week/static/js/3.d455eb6a.chunk.js",
+    "static/js/3.d455eb6a.chunk.js.map": "/day-of-week/static/js/3.d455eb6a.chunk.js.map",
+    "index.html": "/day-of-week/index.html",
+    "static/css/main.d5819cba.chunk.css.map": "/day-of-week/static/css/main.d5819cba.chunk.css.map",
+    "static/js/2.b06c10b1.chunk.js.LICENSE.txt": "/day-of-week/static/js/2.b06c10b1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bdfcab0.js",
+    "static/js/2.b06c10b1.chunk.js",
+    "static/css/main.d5819cba.chunk.css",
+    "static/js/main.2b3369c5.chunk.js"
+  ]
+}
