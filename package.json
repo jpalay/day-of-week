@@ -1,8 +1,8 @@
 {
-  "name": "day-of-week",
+  "name": "weekday",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jpalay.github.io/day-of-week",
+  "homepage": "https://jpalay.github.io/weekday",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
