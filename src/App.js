@@ -38,10 +38,18 @@ function App() {
               <DayOfWeek
                 key={i}
                 dayOfWeek={i}
-                isSelected={ selectedDay === i }
                 onClick={ () => !shouldRevealAnswer ? setSelectedDay(i) : null }
-                isHighlighted={
-                  shouldRevealAnswer && date.getDay() === i && selectedDay !== i
+                isSelected={ !shouldRevealAnswer && selectedDay === i }
+                isCorrect={
+                  shouldRevealAnswer
+                    && date.getDay() === i
+                }
+
+                isIncorrect={
+                  shouldRevealAnswer
+                    && selectedDay === i
+                    && date.getDay() !== i
+
                 }
               />
           )
@@ -109,8 +117,12 @@ function DayOfWeek(props) {
     classNames.push("DayOfWeek--selected");
   }
 
-  if (props.isHighlighted) {
-    classNames.push("DayOfWeek--highlighted")
+  if (props.isCorrect) {
+    classNames.push("DayOfWeek--correct")
+  }
+
+  if (props.isIncorrect) {
+    classNames.push("DayOfWeek--incorrect")
   }
 
   return (

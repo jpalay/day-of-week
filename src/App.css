@@ -36,10 +36,16 @@ body {
   border-color: #ECC8AF;
 }
 
-.DayOfWeek--highlighted .DayOfWeek-text {
+.DayOfWeek--incorrect .DayOfWeek-text {
   color: #ECC8AF;
   background-color: #D33F49;
   border-color: #D33F49;
+}
+
+.DayOfWeek--correct .DayOfWeek-text {
+  color: #2D3142;
+  border: 1px solid #87BAAB;
+  background-color: #87BAAB;
 }
 
 .NextStep {
