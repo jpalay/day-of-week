@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 
 function randomDate() {
-  const start = new Date(1800, 0, 1)
-  const end = new Date(2099, 11, 31)
+  const start = new Date(1950, 0, 1)
+  const end = new Date(2050, 11, 31)
   return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 }
 
